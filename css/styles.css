@@ -511,6 +511,285 @@ header .container .header__slider .header__slider__dots .dot.active__dot {
   }
 }
 
+main {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+main .container .items__template__section {
+  border-bottom: 0.5px solid #000000;
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+}
+main .container .items__template__section .its__category__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #DB4444;
+  position: relative;
+  line-height: 40px;
+  padding-left: 32px;
+  margin: 0px 0px 24px 0px;
+}
+main .container .items__template__section .its__category__title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 40px;
+  background: #DB4444;
+  border-radius: 4px;
+}
+main .container .items__template__section .its__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .items__template__section .its__header .itsh__left {
+  display: flex;
+  gap: 87px;
+  align-items: center;
+}
+main .container .items__template__section .its__header .itsh__left .its__header__title {
+  font-family: "inter-bold";
+  font-size: min(36px, max(18px + 2vw));
+  margin: 0;
+  letter-spacing: 0.64px;
+}
+main .container .items__template__section .its__header .itsh__left .timer {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+main .container .items__template__section .its__header .itsh__left .timer h5 {
+  margin: 0px;
+}
+main .container .items__template__section .its__header .itsh__left .timer h5 span {
+  display: block;
+}
+main .container .items__template__section .its__header .itsh__left .timer h5 span:first-child {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+main .container .items__template__section .its__header .itsh__left .timer h5 span:last-child {
+  font-size: min(32px, max(16px + 2vw));
+  font-family: "inter-bold";
+  font-weight: 700;
+}
+main .container .items__template__section .its__header .itsh__left .timer .seperator {
+  margin-top: 12px;
+}
+main .container .items__template__section .its__header .itsh__left .timer .seperator div {
+  width: 4px;
+  height: 4px;
+  background-color: #DB4444;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+main .container .items__template__section .its__header .itsh__left .timer .seperator div:last-child {
+  margin-bottom: unset;
+}
+main .container .items__template__section .its__header .itsh__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+main .container .items__template__section .its__header .itsh__right .left__btn, main .container .items__template__section .its__header .itsh__right .right__btn {
+  width: 46px;
+  height: 46px;
+  background: #F5F5F5;
+  border-radius: 50% 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .items__template__section .its__header .itsh__right .left__btn svg, main .container .items__template__section .its__header .itsh__right .right__btn svg {
+  width: 20px;
+  height: 20px;
+}
+main .container .items__template__section .its__header .itsh__right .left__btn svg path, main .container .items__template__section .its__header .itsh__right .right__btn svg path {
+  transition: fill 0.3s;
+  fill: #000000;
+}
+main .container .items__template__section .its__header .itsh__right .left__btn:first-child svg, main .container .items__template__section .its__header .itsh__right .right__btn:first-child svg {
+  transform: rotate(180deg);
+}
+main .container .items__template__section .its__header .itsh__right .left__btn:hover svg path, main .container .items__template__section .its__header .itsh__right .right__btn:hover svg path {
+  fill: #DB4444;
+}
+main .container .items__template__section .its__items {
+  display: flex;
+  gap: 30px;
+  grid-gap: 30px;
+}
+main .container .items__template__section .its__items .its__item {
+  margin-top: 40px;
+}
+main .container .items__template__section .its__items .its__item .its__item__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+  padding: 12px;
+  border-radius: 4px;
+  position: relative;
+  max-width: 270px;
+  max-height: 250px;
+  min-width: 270px;
+  min-height: 250px;
+  overflow: hidden;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .sale {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DB4444;
+  color: #FAFAFA;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .wishlist, main .container .items__template__section .its__items .its__item .its__item__header .preview {
+  background: #FFFFFF;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .wishlist {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .preview {
+  position: absolute;
+  top: 54px;
+  right: 12px;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .to__basket {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  padding: 8px 16px;
+  background: #000000;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .to__basket:hover {
+  background: #00FF66;
+  color: #000000;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .image {
+  max-width: 172px;
+  max-height: 152px;
+  overflow: hidden;
+}
+main .container .items__template__section .its__items .its__item .its__item__header .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .container .items__template__section .its__items .its__item .its__item__title {
+  font-weight: 500;
+  margin: 16px 0px 0px 0px;
+}
+main .container .items__template__section .its__items .its__item .its__item__title a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+}
+main .container .items__template__section .its__items .its__item .its__item__price {
+  display: flex;
+  gap: 12px;
+  margin: 8px 0px;
+}
+main .container .items__template__section .its__items .its__item .current_price, main .container .items__template__section .its__items .its__item .old_price {
+  margin: 0px;
+  font-weight: 500;
+}
+main .container .items__template__section .its__items .its__item .current_price {
+  color: #DB4444;
+}
+main .container .items__template__section .its__items .its__item .old_price {
+  color: #000000;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+main .container .items__template__section .its__items .its__item .its__item__review {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .container .items__template__section .its__items .its__item .its__item__review .comments__counts p {
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.5;
+  margin: 0px;
+  font-weight: 600;
+}
+main .container .items__template__section .its__items .its__item:hover .its__item__header .to__basket {
+  bottom: 0px;
+}
+main .container .items__template__section .its__categories {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+main .container .items__template__section .its__categories .category a {
+  width: 170px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.1882352941);
+  border-radius: 4px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+main .container .items__template__section .its__categories .category a svg {
+  margin-bottom: 16px;
+}
+main .container .items__template__section .its__categories .category a svg path, main .container .items__template__section .its__categories .category a svg line {
+  transition: inherit;
+}
+main .container .items__template__section .its__categories .category a span {
+  font-size: 16px;
+  color: #000000;
+  transition: inherit;
+}
+main .container .items__template__section .its__categories .category a:hover {
+  background: #DB4444;
+  border-color: #DB4444;
+}
+main .container .items__template__section .its__categories .category a:hover svg path, main .container .items__template__section .its__categories .category a:hover svg line {
+  stroke: #FFFFFF;
+}
+main .container .items__template__section .its__categories .category a:hover span {
+  color: #FFFFFF;
+}
+main .container .items__template__section .redBtn.bottom {
+  margin: 60px auto 0px auto;
+}
+
 /* NORMALIZE CSS */
 * {
   box-sizing: border-box;

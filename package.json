@@ -4,8 +4,8 @@
   "description": "Store project with pure HTML, CSS and JS",
   "main": "all.js",
   "scripts": {
-    "start": "gulp watch",
-    "prod": "gulp brod",
+    "watch": "gulp watch",
+    "build": "gulp build",
     "dev": "gulp dev"
   },
   "keywords": [
@@ -32,7 +32,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1",
     "sass": "^1.61.0"
-  }, 
+  },
   "type": "module"
 }

@@ -1,0 +1,343 @@
+main {
+	margin-top: 140px;
+	margin-bottom: 140px;
+	.container {
+		.items__template__section {
+			border-bottom: 0.5px solid #000000;
+			margin-bottom: 70px;
+			padding-bottom: 70px;
+			.its__category__title {
+				font-size: 16px;
+				font-weight: 600;
+				color: $red;
+				position: relative;
+				line-height: 40px;
+				padding-left: 32px;
+				margin: 0px 0px 24px 0px;
+				
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					content: "";
+					width: 20px;
+					height: 40px;
+					background: $red;
+					border-radius: $br;
+				}
+			}
+			.its__header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.itsh__left {
+					display: flex;
+					gap: 87px;
+					align-items: center;
+					.its__header__title {
+						font-family: "inter-bold";
+						font-size: min(36px, max(18px + 2vw));
+						margin: 0;
+						letter-spacing: 0.64px;
+					}
+					
+						.timer {
+							display: flex;
+							align-items: center;
+							gap: 17px;
+							h5 {
+								margin: 0px;
+								span {
+									display: block;
+
+									&:first-child {
+										color: $black;
+										font-size: 12px;
+										font-weight: 500;
+										margin-bottom: 4px;
+									}
+
+									&:last-child {
+										font-size: min(32px, max(16px + 2vw));
+										font-family: "inter-bold";
+										font-weight: 700;
+									}
+
+								}
+							}
+							.seperator {
+								margin-top: 12px;
+								div {
+									width: 4px;
+									height: 4px;
+									background-color: $red;
+									border-radius: 50%;
+									margin-bottom: 8px;
+
+									&:last-child {
+										margin-bottom: unset;
+									}
+
+								}
+							}
+						}
+					
+				}
+
+				.itsh__right {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					gap: 8px;
+					.left__btn, .right__btn {
+						width: 46px;
+						height: 46px;
+						background: $mediumGray;
+						border-radius: 50% 50%;
+						cursor: pointer;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						svg {
+							width: 20px;
+							height: 20px;
+
+							path {
+								transition: fill $trs;
+								fill: $black;
+							}
+	
+							}
+
+							&:first-child {
+								svg {
+									transform: rotate(180deg);
+								}
+							}
+
+							&:hover {
+								svg {
+									path {
+										fill: $red;
+										}
+									}
+								}
+							}
+						}
+						
+					}
+
+					.its__items {
+						display: flex;
+						gap: 30px;
+						grid-gap: 30px;
+						.its__item {
+							margin-top: 40px;
+							.its__item__header {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								background: $mediumGray;
+								padding: 12px;
+								border-radius: $br;
+								position: relative;
+								max-width: 270px;
+								max-height: 250px;
+								min-width: 270px;
+								min-height: 250px;
+								overflow: hidden;
+								.sale {
+									position: absolute;
+									top: 12px;
+									left: 12px;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									background: $red;
+									color: #FAFAFA;
+									padding: 4px 12px;
+									border-radius: $br;
+									font-size: 12px;
+									width: fit-content;
+									user-select: none;
+								}
+
+								.wishlist, .preview {
+								background: $white;
+								width: 34px;
+								height: 34px;
+								border-radius: 50%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								cursor: pointer;
+								}
+
+								.wishlist {
+									position: absolute;
+									top: 12px;
+									right: 12px;
+								}
+
+								.preview {
+									position: absolute;
+									top: 54px;
+									right: 12px;
+								}
+
+								.to__basket {
+									position: absolute;
+									bottom: -100px;
+									left: 0px;
+									padding: 8px 16px;
+									background: $black;
+									color: $white;
+									width: 100%;
+									text-align: center;
+									cursor: pointer;
+									transition: all $trs;
+
+									&:hover {
+										background: $green;
+										color: $black;
+									}
+								}
+
+
+								.image {
+								max-width: 172px;
+								max-height: 152px;
+								overflow: hidden;
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: contain;
+								}
+								}
+							}
+
+							.its__item__title {
+								font-weight: 500;
+								margin: 16px 0px 0px 0px;
+								a{
+									text-decoration: none;
+									font-size: 16px;
+									color: $black;
+								}
+							}
+
+							.its__item__price{
+								display: flex;
+								gap: 12px;
+								margin: 8px 0px;
+								p{
+
+								}
+							}
+
+							.current_price, .old_price {
+								margin: 0px;
+								font-weight: 500;
+							}
+
+							.current_price {
+								color: $red;
+							}
+
+							.old_price {
+								color: $black;
+								opacity: 0.5;
+								text-decoration: line-through;
+							}
+
+							.its__item__review {
+								display: flex;
+								align-items: center;
+								gap: 8px;
+								
+
+								.comments__counts {
+									p{
+										font-size: 14px;
+										color: $black;
+										opacity: 0.5;
+										margin: 0px;
+										font-weight: 600;
+									}
+								}
+							}
+
+							&:hover {
+								.its__item__header {
+									.to__basket {
+										bottom: 0px;
+									}
+								}
+							}
+						}
+
+						
+					}
+
+					.its__categories {
+						display: flex;
+						gap: 30px;
+						margin-top: 60px;
+						.category {
+							a {
+								width: 170px;
+								height: 145px;
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-items: center;
+								border: 2px solid #00000030;
+								border-radius: $br;
+								transition: all $trs;
+								text-decoration: none;
+								svg {
+									margin-bottom: 16px;
+
+									path, line {
+										transition: inherit;
+									}
+								}
+
+								span {
+									font-size: 16px;
+									color: $black;
+									transition: inherit;
+
+								}
+
+
+								&:hover {
+									background: $red;
+									border-color: $red;
+
+									svg {
+										path, line {
+											stroke: $white;
+										}
+									}
+
+									span {
+										color: $white;
+									}
+								}
+							}
+						}
+					}
+
+
+
+					.redBtn.bottom {
+						margin: 60px auto 0px auto;
+					}
+
+
+				}
+			}
+		}
